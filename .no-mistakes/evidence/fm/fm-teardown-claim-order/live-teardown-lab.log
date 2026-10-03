@@ -1,0 +1,33 @@
+
+=== missing-branch: exit 1 ===
+warning: task stale-task's recorded worktree /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.5y1qrB/pool/.treehouse/project-e02a3a/1/project was reassigned to task live-task (home /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.5y1qrB), which claimed that pool slot after this record was written; that slot is no longer stale-task's, so its processes, copy, and claim are left untouched and only stale-task's own cleanup runs.
+REFUSED: reassigned ship task stale-task has no preserved recorded branch in /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.5y1qrB/projects/project; retaining its task record - not even --force can remove this custody evidence.
+record=present claim=present branch=absent
+
+=== ambiguous-claim: exit 1 ===
+REFUSED: task stale-task's recorded worktree /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.alBe7G/pool/.treehouse/project-e409c7/1/project carries a slot-owner claim that cannot be read, so the slot cannot be proved to still be this task's; nothing was changed - not even with --force.
+record=present claim=present branch=present
+
+=== interrupted-after-return: exit 1 ===
+error: stale-task's endpoint and local copy are cleaned up, but its task record could not be removed (task record could not be removed at /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.YWskqt/state/stale-task.meta)
+record=present claim=absent branch=present
+
+=== retry-after-reassignment: exit 0 ===
+warning: task stale-task's recorded worktree /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.YWskqt/pool/.treehouse/project-fce1e7/1/project was reassigned to task live-task (home /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.YWskqt), which claimed that pool slot after this record was written; that slot is no longer stale-task's, so its processes, copy, and claim are left untouched and only stale-task's own cleanup runs.
+teardown stale-task complete (window firstmate:fm-stale-task; pool slot /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.YWskqt/pool/.treehouse/project-fce1e7/1/project left to task live-task (home /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.YWskqt), which it was reassigned to)
+record=absent claim=present branch=present
+
+=== records-only-pruning: exit 0 ===
+warning: task stale-task's recorded worktree /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.bKBc32/pool/.treehouse/project-f1034c/1/project was reassigned to task live-task (home /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.bKBc32), which claimed that pool slot after this record was written; that slot is no longer stale-task's, so its processes, copy, and claim are left untouched and only stale-task's own cleanup runs.
+project: pruned fm/landed
+teardown stale-task complete (window firstmate:fm-stale-task; pool slot /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.bKBc32/pool/.treehouse/project-f1034c/1/project left to task live-task (home /home/agentuser/.no-mistakes/worktrees/2c673edc43e7/01M40E1Z9VMDDKFE4PVQKAAAK4/.l.bKBc32), which it was reassigned to)
+record=absent claim=present branch=present
+unpublished commit=preserved; landed branch=pruned
+
+=== narrow-fetch-stale-origin ===
+project: already current
+stale origin ref=removed; unpublished commit=preserved
+
+=== stale-fork-ref ===
+project: already current
+stale fork ref=present; unpublished commit=preserved
